@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
 
         AccountScreen.routeName: (context) => AccountScreen(),
         CommunityScreen.routeName: (context) => CommunityScreen(),
-        ExplorScreen.routeName: (context) => ExplorScreen(),
+        ExploreScreen.routeName: (context) => ExploreScreen(),
         PredectingScreen.routeName: (context) => PredectingScreen(),
         MapScreen.routeName: (context) => MapScreen(),
       },

@@ -90,7 +90,7 @@ class AccountScreen extends StatelessWidget {
                                 ),
                               ],
                             ),
-                            child: const Icon(Icons.edit, size: 18, color: green),
+                            child: const Icon(Icons.edit, size: 18, color: barGreen),
                           ),
                         ),
                       ),
@@ -140,7 +140,7 @@ class AccountScreen extends StatelessWidget {
                   child: Column(
                     children: [
                       _AccountButton(
-                        text: "My orders",
+                        text: "SOS",
                         onPressed: () {
                           // TODO: افتحي صفحة الطلبات
                           // Navigator.pushNamed(context, '/orders');
@@ -155,20 +155,22 @@ class AccountScreen extends StatelessWidget {
                         },
                       ),
                       const SizedBox(height: 12),
-                      _AccountButton(
-                        text: "Sign out",
-                        filled: true, // خليها بارزة لو حابة
-                        onPressed: () async {
-                          // TODO: signOut()  (Firebase/Auth)
-                           Navigator.pushReplacementNamed(context, 'signin');
-                        },
-                      ),
-                      const SizedBox(height: 12),
+
+
                       _AccountButton(
                         text: "About us",
                         onPressed: () {
                           // TODO: صفحة about
                           // Navigator.pushNamed(context, '/about');
+                        },
+                      ),
+                      const SizedBox(height: 12),
+                      _AccountButton(
+                        text: "Sign out",
+                        filled: true, // خليها بارزة لو حابة
+                        onPressed: () async {
+                          // TODO: signOut()  (Firebase/Auth)
+                          Navigator.pushReplacementNamed(context, 'signin');
                         },
                       ),
                     ],

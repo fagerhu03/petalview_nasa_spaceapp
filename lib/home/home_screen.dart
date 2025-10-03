@@ -24,7 +24,7 @@ class _HomeScreenState extends State<HomeScreen>
     with SingleTickerProviderStateMixin {
   int _index = 2; // خليه يبدأ على Map مثلاً
   final _pages = const [
-    ExplorScreen(),
+    ExploreScreen(),
     PredectingScreen(),
     MapScreen(),
     CommunityScreen(),
