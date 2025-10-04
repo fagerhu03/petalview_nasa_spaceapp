@@ -30,11 +30,12 @@ class _MapScreenState extends State<MapScreen> {
 
   // NDVI & EVI WMTS (NASA GIBS)
   String _nasaLayerUrl(String layer, DateTime date) {
-    final formattedDate = DateFormat('yyyy/MM/dd').format(date);
+    // 👈 لازم تكون بشرطات مش سلاشات
+    final formattedDateForTiles = DateFormat('yyyy-MM-dd').format(date);
     if (layer == 'NDVI') {
-      return "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_L3_NDVI_16Day/default/$formattedDate/GoogleMapsCompatible_Level9/{z}/{y}/{x}.png";
+      return "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_L3_NDVI_16Day/default/$formattedDateForTiles/GoogleMapsCompatible_Level9/{z}/{y}/{x}.png";
     } else if (layer == 'EVI') {
-      return "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_L3_EVI_16Day/default/$formattedDate/GoogleMapsCompatible_Level9/{z}/{y}/{x}.png";
+      return "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_L3_EVI_16Day/default/$formattedDateForTiles/GoogleMapsCompatible_Level9/{z}/{y}/{x}.png";
     } else {
       return "";
     }
@@ -188,6 +189,8 @@ class _MapScreenState extends State<MapScreen> {
                   options: const MapOptions(
                     center: LatLng(30.0444, 31.2357), // Cairo
                     zoom: 5.0,
+                    minZoom: 2.0,
+                    maxZoom: 9.0, // مستوى GIBS
                   ),
                   children: [
                     // Base map
@@ -280,9 +283,9 @@ class _MapScreenState extends State<MapScreen> {
                   const SizedBox(height: 4),
                   Row(
                     children: [
-                      _dateChip("Requested", requestedDate),
+                      _dateChip("Requested", requestedDate),  // عرض UI بس
                       const SizedBox(width: 8),
-                      _dateChip("Displayed", validDate),
+                      _dateChip("Displayed", validDate),      // التاريخ الفعلي للتايلز
                     ],
                   ),
                 ],
@@ -308,6 +311,7 @@ class _MapScreenState extends State<MapScreen> {
           const Icon(Icons.calendar_today, size: 14, color: green),
           const SizedBox(width: 6),
           Text(
+            // نعرض بالسلاشات عشان الشكل فقط
             "$label: ${DateFormat('yyyy/MM/dd').format(date)}",
             style: GoogleFonts.poppins(fontSize: 12, color: Colors.black87),
           ),

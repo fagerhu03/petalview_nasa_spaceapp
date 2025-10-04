@@ -4,7 +4,7 @@ import 'package:petalview/home/tabs/account.dart';
 import 'package:petalview/home/tabs/community.dart';
 import 'package:petalview/home/tabs/explor.dart';
 import 'package:petalview/home/tabs/map.dart';
-import 'package:petalview/home/tabs/predecting.dart';
+import 'package:petalview/home/tabs/predection.dart';
 
 const Color kGreen = Color(0xFF2E7D32);
 const Color kBarGreen = Color(0xFF2E7D32); // أخضر أدكن شوية لشريط التنقل
@@ -25,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen>
   int _index = 2; // خليه يبدأ على Map مثلاً
   final _pages = const [
     ExploreScreen(),
-    PredectingScreen(),
+    PredectionScreen(),
     MapScreen(),
     CommunityScreen(),
     AccountScreen(),

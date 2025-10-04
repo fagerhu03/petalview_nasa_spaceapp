@@ -7,7 +7,7 @@ import 'auth/signup.dart';
 import 'home/home_screen.dart';
 import 'home/tabs/explor.dart';
 import 'home/tabs/map.dart';
-import 'home/tabs/predecting.dart';
+import 'home/tabs/predection.dart';
 import 'onbording/onbording.dart';
 
 void main() async {
@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
         AccountScreen.routeName: (context) => AccountScreen(),
         CommunityScreen.routeName: (context) => CommunityScreen(),
         ExploreScreen.routeName: (context) => ExploreScreen(),
-        PredectingScreen.routeName: (context) => PredectingScreen(),
+        PredectionScreen.routeName: (context) => PredectionScreen(),
         MapScreen.routeName: (context) => MapScreen(),
       },
     );

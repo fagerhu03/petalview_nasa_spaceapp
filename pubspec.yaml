@@ -39,6 +39,10 @@ dependencies:
   share_plus: ^10.0.2    # share posts
   flutter_map: ^6.1.0
   latlong2: ^0.9.0
+  http: ^1.2.3
+  geolocator: ^14.0.2
+  flutter_typeahead: ^5.2.0   # keep latest 5.x
+
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
