@@ -1,16 +1,65 @@
-# petalview
+# 🌸 PetalView App
 
-A new Flutter project.
+PetalView is a Flutter-based application for exploring, predicting, and
+visualizing plant bloom data using NASA satellite layers and local
+datasets.
 
-## Getting Started
+------------------------------------------------------------------------
 
-This project is a starting point for a Flutter application.
+## 🚀 Features
 
-A few resources to get you started if this is your first Flutter project:
+-   Explore wildflower datasets
+-   Interactive community feed
+-   NASA Map Layers (NDVI & EVI)
+-   Bloom prediction using ML API
+-   Themed UI with search & filters
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+------------------------------------------------------------------------
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📸 Screenshots
+
+  ---------------------------------------------------------------------------------------------------
+  Home                            Explore                               Map
+  ------------------------------- ------------------------------------- -----------------------------
+  ![Home](screenshot/welcom_screenshot.png)   ![Explore](screenshot/explore_screenshot.png)   ![Map](screenshots/map_screenshot.png)
+
+  ---------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+## 🎥 Demo
+
+-   Watch the app demo:\
+    [▶️ Screen Recording](screenshots/demo.mp4)
+
+------------------------------------------------------------------------
+
+## 📄 PDF Report / Documentation
+
+You can **view or download** the full PDF documentation here:
+
+👉 [📥 Download Demo PDF](screenshots/demo.pdf)
+
+Or click the preview image below:
+
+[![PDF Preview](screenshots/pdf-cover.png)](screenshots/demo.pdf)
+
+------------------------------------------------------------------------
+
+## 🛠️ Tech Stack
+
+-   Flutter & Dart
+-   Google Fonts & Shared Preferences
+-   NASA Earthdata (GIBS API)
+-   Flask ML Prediction API
+
+------------------------------------------------------------------------
+
+## 📦 Installation
+
+``` bash
+git clone https://github.com/your-username/petalview.git
+cd petalview
+flutter pub get
+flutter run
+```
