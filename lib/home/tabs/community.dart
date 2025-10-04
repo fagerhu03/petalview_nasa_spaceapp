@@ -119,16 +119,7 @@ class _CommunityScreenState extends State<CommunityScreen> {
                     onChanged: (v) => setState(() => _search = v),
                     onOpenFilters: _openFiltersSheet,
                   ),
-                  const SizedBox(height: 14),
 
-                  // REELS TEASERS
-                  Row(
-                    children: const [
-                      Expanded(child: _ReelCardAdd()),
-                      SizedBox(width: 12),
-                      Expanded(child: _ReelCardEmpty()),
-                    ],
-                  ),
                   const SizedBox(height: 14),
 
                   // COMPOSER

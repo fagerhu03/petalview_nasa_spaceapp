@@ -7,7 +7,7 @@ import 'package:petalview/home/tabs/map.dart';
 import 'package:petalview/home/tabs/predecting.dart';
 
 const Color kGreen = Color(0xFF2E7D32);
-const Color kBarGreen = Color(0xFF1E7E5A); // أخضر أدكن شوية لشريط التنقل
+const Color kBarGreen = Color(0xFF2E7D32); // أخضر أدكن شوية لشريط التنقل
 const Color kIndicator = Color(0xFFFFE0B2); // بيج فاتح للمؤشر
 const Color kLabel = Colors.white;
 
