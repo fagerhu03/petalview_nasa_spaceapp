@@ -62,7 +62,7 @@ PetalView is a **Flutter-based space app** that combines AI prediction, remote s
     </tr>
     <tr>
       <td align="center">
-        <img src="assets/screenshot/explor_creenshot.png" width="150"/><br/>
+        <img src="assets/screenshot/explor_screenshot.png" width="150"/><br/>
         <b>Explore</b><br/>
         Search and view wildflower dataset
       </td>
@@ -111,8 +111,7 @@ PetalView is a **Flutter-based space app** that combines AI prediction, remote s
 [▶️ **PetalView Demo Video**](assets/screenshot/demo.mp4)
 
 > Watch the app ScreenRecorded here:
-[▶️ **PetalView ScreenRecorded for the Application**](assets/screenshot/demo.mp4)
-
+[▶️ **PetalView ScreenRecorded for the Application**](assets/screenshot/screen_recording.mp4)
 ---
 
 ## 📄 PDF Documentation
